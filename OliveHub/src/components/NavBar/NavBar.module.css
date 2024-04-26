@@ -1,0 +1,21 @@
+.NavBar {
+  display: flex;
+  gap: 15%;
+  flex-direction: row;
+  width: 40%;
+  padding: 2rem 2rem;
+  font-weight: 700;
+}
+
+.NavBar a {
+  transition: 0.5s ease;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+.NavBar a:global(.active) {
+  text-decoration: underline;
+}
