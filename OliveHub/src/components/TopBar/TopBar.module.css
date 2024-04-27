@@ -1,0 +1,18 @@
+.topBar {
+  background-color: var(--color-olive);
+  color: var(--color-black);
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  height: 8rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.userIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+}

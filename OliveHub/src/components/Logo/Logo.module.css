@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.logo img {
+  max-height: 4rem;
+  transition: 0.2s ease-out;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
