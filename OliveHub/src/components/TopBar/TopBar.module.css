@@ -2,17 +2,33 @@
   background-color: var(--color-olive);
   color: var(--color-black);
   position: sticky;
-  bottom: 0;
+  top: 0;
   width: 100%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   height: 8rem;
-  align-items: center;
-  justify-items: center;
 }
 
 .userIcons {
   display: flex;
   flex-direction: row;
-  gap: 6rem;
+  gap: 3rem;
+  text-align: center;
+  justify-self: right;
+  align-self: center;
+  padding-right: 15%;
+}
+
+.userIcons img {
+  max-width: 2rem;
+  transition: ease-in 0.2s;
+}
+
+.userIcons img:hover {
+  transform: scale(1.2);
+}
+
+.userIcons p {
+  font-size: 0.75rem;
+  font-weight: 600;
 }

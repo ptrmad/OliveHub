@@ -1,7 +1,9 @@
 import { Logo } from "../Logo/Logo";
 import { NavBar } from "../NavBar/NavBar";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./TopBar.module.css";
+import PROFILE from "../../assets/profile.svg";
+import FAVOURITES from "../../assets/favourite.svg";
 
 export function TopBar() {
   return (
@@ -9,8 +11,14 @@ export function TopBar() {
       <NavBar />
       <Logo />
       <div className={styles.userIcons}>
-        <Link to="favourites">Ikona ulubione</Link>
-        <Link to="my-profile">Ikona profilu</Link>
+        <NavLink to="my-profile">
+          <img src={FAVOURITES} alt="" />
+          <p>Favourites</p>
+        </NavLink>
+        <NavLink to="favourites">
+          <img src={PROFILE} alt="" />
+          <p>My Profile</p>
+        </NavLink>
       </div>
     </div>
   );
