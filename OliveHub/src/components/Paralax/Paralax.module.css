@@ -1,0 +1,33 @@
+.paralax {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.sky .ground .front {
+  position: absolute;
+  max-width: 100vh;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+}
+
+.sky .ground .front img {
+  max-width: 100vh;
+}
+
+.sky {
+  transform: translateZ(-20px) scale(4);
+}
+
+.ground {
+  transform: translateZ(-10px) scale(2);
+}
+
+.front {
+  transform: translateZ(-5px) scale(1.5);
+}
