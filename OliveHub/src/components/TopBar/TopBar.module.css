@@ -1,12 +1,11 @@
 .topBar {
   background-color: var(--color-olive);
   color: var(--color-black);
-  position: sticky;
-  top: 0;
   width: 100%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   height: 8rem;
+  z-index: 999;
 }
 
 .userIcons {

@@ -1,8 +1,6 @@
 .footer {
   background-color: var(--color-black);
   color: var(--color-olive);
-  position: sticky;
-  bottom: 0;
   width: 100%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -10,6 +8,7 @@
   align-items: center;
   justify-items: center;
   text-align: center;
+  z-index: 999;
 }
 
 .footerSection {

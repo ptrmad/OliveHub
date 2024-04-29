@@ -1,5 +1,6 @@
 .paralax {
   height: 100vh;
+  position: absolute;
   margin: 0;
   padding: 0;
   overflow-y: auto;
@@ -7,6 +8,10 @@
   perspective: 200px;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  scroll-behavior: smooth;
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .paralax::-webkit-scrollbar {
@@ -42,4 +47,10 @@
 
 .front {
   z-index: 0;
+}
+
+.paralaxplaceholder {
+  min-height: 100vh;
+  z-index: -999;
+  display: block;
 }
