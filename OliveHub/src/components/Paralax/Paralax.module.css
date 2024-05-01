@@ -31,7 +31,7 @@
 }
 
 .landscape3 {
-  transform: translateZ(-200px) translateY(20px) scale(3);
+  transform: translateZ(-200px) translateY(-40px) scale(3);
   z-index: -4;
 }
 .landscape2 {
@@ -45,21 +45,21 @@
 }
 
 .olives {
-  background-image: url("https://i.shgcdn.com/7dcaf676-55ea-4b60-a87e-8f894413af32/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+  background-image: url("https://blog.lexmed.com/images/librariesprovider80/blog-post-featured-images/shutterstock_562646761.jpg?sfvrsn=aa8b910b_0");
   transform: translateY(-750px) translateZ(100px) scale(0.5);
   z-index: -1;
-  background-image: ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-height: 100vh;
 }
-
-.olivesImg {
-}
-
 .gradient {
   background-image: linear-gradient(
-    var(--color-black) 20%,
-    rgba(0, 0, 0, 0.1) 70%
+    var(--color-black) 2%,
+    rgba(0, 0, 0, 0.1) 90%,
+    var(--color-black) 99%
   );
-  height: 200px;
+  height: 100vh;
 }
 
 .paralaxPlaceholder {
