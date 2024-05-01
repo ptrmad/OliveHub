@@ -17,6 +17,8 @@ export function Paralax() {
 
         <div className={styles.olives}>
           <div className={styles.gradient}></div>
+          {/* <NewReviews />
+          <TopOlives /> */}
         </div>
       </div>
     </div>
