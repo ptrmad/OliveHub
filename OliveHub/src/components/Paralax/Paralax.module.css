@@ -8,7 +8,7 @@
   perspective: 200px;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   top: 4rem;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
   max-width: 100vw;
 }
 
-.landscape1 .landscape2 .landscape3 .olives {
+.landscape1 .landscape2 .landscape3 .olives .heading {
   position: absolute;
   max-width: 100vh;
   height: 100%;
@@ -34,13 +34,19 @@
   transform: translateZ(-200px) translateY(-40px) scale(3);
   z-index: -4;
 }
+
+.heading {
+  transform: translateZ(-200px) translateY(-290px) scale(5);
+  z-index: -4;
+}
+
 .landscape2 {
-  transform: translateZ(-50px) scale(1.5) translateY(50px);
+  transform: translateZ(-50px) scale(1.5) translateY(20px);
   z-index: -3;
 }
 
 .landscape1 {
-  transform: translateZ(50px) scale(0.75) translateY(-500px);
+  transform: translateZ(50px) scale(0.75) translateY(-600px);
   z-index: -2;
 }
 

@@ -1,0 +1,42 @@
+.articleCover {
+  max-height: inherit;
+  width: inherit;
+  box-shadow: 2px 2px 10px var(--color-olive);
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.articleCoverSub {
+  max-height: 20vh;
+  box-shadow: 2px 2px 10px var(--color-olive);
+  border-radius: 1rem;
+}
+
+.articleCoverSub img {
+  max-height: inherit;
+  max-width: 20vh;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px var(--color-olive);
+}
+
+.articleCover img {
+  max-height: inherit;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px var(--color-olive);
+}
+
+.reviewTeaser {
+  color: var(--color-white);
+  text-shadow: 0px 0px 10px var(--color-olive);
+  font-size: 2rem;
+  text-justify: distribute;
+  align-self: center;
+  margin: 0 1rem;
+}
+
+.sub {
+  display: flex;
+  flex-direction: row;
+}

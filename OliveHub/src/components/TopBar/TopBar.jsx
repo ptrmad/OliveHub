@@ -9,7 +9,9 @@ export function TopBar() {
   return (
     <div className={styles.topBar}>
       <NavBar />
-      <Logo />
+      <div className={styles.logo}>
+        <Logo />
+      </div>
       <div className={styles.userIcons}>
         <NavLink to="my-profile">
           <img src={FAVOURITES} alt="" />

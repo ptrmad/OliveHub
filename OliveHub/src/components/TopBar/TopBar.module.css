@@ -6,6 +6,7 @@
   grid-template-columns: 33% 33% 33%;
   height: 6rem;
   z-index: 999;
+  max-width: 100vw;
 }
 
 .userIcons {
@@ -30,4 +31,9 @@
 .userIcons p {
   font-size: 0.75rem;
   font-weight: 600;
+}
+
+.logo {
+  align-self: center;
+  justify-self: center;
 }
