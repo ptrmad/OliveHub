@@ -40,3 +40,28 @@
   display: flex;
   flex-direction: row;
 }
+
+.nameAndBrand {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nameAndBrand {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  font-weight: 700;
+  text-shadow: 0px 0px 10px var(--color-olive);
+}
+
+.nameAndBrand .name {
+  font-size: 2rem;
+}
+
+.nameAndBrand .brand {
+  font-size: 1.5rem;
+}

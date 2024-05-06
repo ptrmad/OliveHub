@@ -14,10 +14,10 @@ export function Paralax() {
 
       <div className={styles.paralax}>
         <img className={styles.landscape3} src={LANDSCAPE3} alt="" />
+        <img className={styles.landscape2} src={LANDSCAPE2} alt="" />
         <div className={styles.heading}>
           <Logo />
         </div>
-        <img className={styles.landscape2} src={LANDSCAPE2} alt="" />
         <img className={styles.landscape1} src={LANDSCAPE1} alt="" />
 
         <div className={styles.olives}>
