@@ -1,12 +1,23 @@
 import styles from "./HomeRankingItem.module.css";
+import DROP from "../../assets/olivedrop.png";
 
-export function HomeRankingItem() {
+export function HomeRankingItem({
+  imgSource,
+  oliveName,
+  oliveBrand,
+  oliveRating,
+}) {
   return (
     <div className={styles.homeRankingItem}>
-      <p>Name</p>
-      <p>Brand</p>
-      <p>Rating</p>
-      <div>Image</div>
+      <div className={styles.textSection}>
+        <p className={styles.name}>{oliveName}</p>
+        <p className={styles.brand}>{oliveBrand}</p>
+        <p className={styles.rating}>
+          {oliveRating} <img className={styles.olivedrop} src={DROP} alt="" />
+        </p>
+      </div>
+
+      <img className={styles.olivePicture} src={imgSource} alt="" />
     </div>
   );
 }
