@@ -41,7 +41,7 @@
 }
 
 .landscape2 {
-  transform: translateZ(-50px) scale(1.5) translateY(70px);
+  transform: translateZ(-50px) scale(1.5) translateY(50px);
   z-index: -3;
 }
 

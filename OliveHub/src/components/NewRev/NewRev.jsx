@@ -10,13 +10,35 @@ export function NewRev() {
         <div className={styles.grid}>
           <div>
             <div className={styles.main}>
-              <ArticleCover imgSource={data[0].image} isMain={true} />
+              {data
+                .sort((a, b) => new Date(b.reviewDate) - new Date(a.reviewDate))
+                .slice(0, 1)
+                .map((item) => (
+                  <ArticleCover
+                    key={item.id}
+                    imgSource={item.image}
+                    isMain={true}
+                    oliveName={item.name}
+                    oliveBrand={item.brand}
+                    oliveRev={item.review.slice(0, 100)}
+                  />
+                ))}
             </div>
           </div>
           <div className={styles.aside}>
-            <ArticleCover imgSource={data[0].image} isMain={false} />
-            <ArticleCover imgSource={data[0].image} isMain={false} />
-            <ArticleCover imgSource={data[0].image} isMain={false} />
+            {data
+              .sort((a, b) => new Date(b.reviewDate) - new Date(a.reviewDate))
+              .slice(1, 4)
+              .map((item) => (
+                <ArticleCover
+                  key={item.id}
+                  imgSource={item.image}
+                  isMain={false}
+                  oliveName={item.name}
+                  oliveBrand={item.brand}
+                  oliveRev={item.review.slice(0, 100)}
+                />
+              ))}
           </div>
         </div>
       </div>

@@ -1,17 +1,71 @@
 .articleCover {
-  max-height: inherit;
-  width: inherit;
-  box-shadow: 2px 2px 10px var(--color-olive);
-  background: rgba(255, 255, 255, 0.5);
+  height: inherit;
+  display: flex;
   border-radius: 1rem;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  justify-content: space-around;
+  text-shadow: 0px 0px 5px var(--color-olive);
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 0px 10px var(--color-olive);
 }
+
+.articleCover .image {
+  width: 25vw;
+  border-radius: 1rem 0rem 0rem 1rem;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+.articleCover:hover {
+  box-shadow: 0px 0px 20px var(--color-olive);
+}
+
+.articleCover .text {
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 700;
+  padding: 2rem;
+  margin: 0;
+  gap: 5vh;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 0 1rem 1rem 0;
+}
+
+.text > .name {
+  align-self: left;
+  font-size: 2rem;
+  border-radius: 1rem;
+}
+
+.text > .name:hover {
+  text-decoration: underline;
+}
+
+.text > .brand {
+  align-self: left;
+  font-size: 1.25rem;
+}
+
+.text .brand:hover {
+  text-decoration: underline;
+}
+
+/*----------------------------------*/
 
 .articleCoverSub {
   max-height: 20vh;
-  box-shadow: 2px 2px 10px var(--color-olive);
+  box-shadow: 0px 0px 10px var(--color-olive);
   border-radius: 1rem;
+  display: flex;
+  width: 30vw;
+  background: rgba(255, 255, 255, 0.5);
+  transition: all 0.2s ease-out;
+}
+
+.articleCoverSub:hover {
+  transform: scale(102%);
+  box-shadow: 0px 0px 20px var(--color-olive);
 }
 
 .articleCoverSub img {
@@ -19,49 +73,40 @@
   max-width: 20vh;
   border-radius: 1rem;
   box-shadow: 0px 0px 10px var(--color-olive);
+  cursor: pointer;
 }
 
-.articleCover img {
-  max-height: inherit;
-  border-radius: 1rem;
-  box-shadow: 0px 0px 10px var(--color-olive);
-}
-
-.reviewTeaser {
-  color: var(--color-white);
-  text-shadow: 0px 0px 10px var(--color-olive);
-  font-size: 2rem;
-  text-justify: distribute;
-  align-self: center;
-  margin: 0 1rem;
-}
-
-.sub {
-  display: flex;
-  flex-direction: row;
-}
-
-.nameAndBrand {
-  position: absolute;
+.subTextfield {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  justify-content: space-between;
+  padding: 0.5rem;
+  text-shadow: 0px 0px 2px var(--color-olive);
 }
 
-.nameAndBrand {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
+.subTextfield > .name,
+.brand {
   font-weight: 700;
-  text-shadow: 0px 0px 10px var(--color-olive);
+  cursor: pointer;
 }
 
-.nameAndBrand .name {
-  font-size: 2rem;
-}
-
-.nameAndBrand .brand {
+.subTextfield > .name {
   font-size: 1.5rem;
+}
+
+.subTextfield > .name:hover {
+  text-decoration: underline;
+}
+
+.subTextfield > .brand {
+  font-size: 0.75rem;
+  background: none;
+}
+
+.subTextfield > .brand:hover {
+  text-decoration: underline;
+}
+
+.subTextfield > .revTeaser {
+  background: none;
 }
