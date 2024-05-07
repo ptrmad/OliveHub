@@ -1,6 +1,7 @@
 import LANDSCAPE1 from "../../images/Landscape1.png";
 import LANDSCAPE2 from "../../images/Landscape2.png";
 import LANDSCAPE3 from "../../images/Landscape3.png";
+import { HomeRanking } from "../HomeRanking/HomeRanking";
 // import { Logo } from "../Logo/Logo";
 import { NewRev } from "../NewRev/NewRev";
 // import OLIVES from "../../images/FreshOlives.jpg";
@@ -24,6 +25,7 @@ export function Paralax() {
           <div className={styles.gradient}>
             <NewRev />
           </div>
+          <HomeRanking />
         </div>
       </div>
     </div>
