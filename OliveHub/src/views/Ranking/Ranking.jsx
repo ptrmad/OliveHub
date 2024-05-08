@@ -5,8 +5,9 @@ import THIRD from "../../assets/3rdplace.svg";
 import { data } from "../../data/data";
 import { HomeRankingItem } from "../../components/HomeRankingItem/HomeRankingItem";
 import styles from "./Ranking.module.css";
+import { Pagination } from "../../components/Pagination/Pagination";
 export function Ranking() {
-  const sortedData = data.sort((a, b) => b.rating - a.rating).slice(0, 10);
+  const sortedData = data.sort((a, b) => b.rating - a.rating).slice(0, 30);
 
   return (
     <div className={styles.ranking}>
@@ -27,6 +28,7 @@ export function Ranking() {
           />
         </div>
       ))}
+      <Pagination numberOfPages={sortedData.length} />
     </div>
   );
 }
