@@ -9,14 +9,13 @@ import { Layout } from "./components/Layout/Layout.jsx";
 
 const router = createBrowserRouter([
   {
+    path: "/home",
+    element: <Home />,
+  },
+  {
     path: "",
     element: <Layout />,
-    children: [
-      {
-        path: "/home",
-        element: <Home />,
-      },
-    ],
+    children: [],
   },
   {
     path: "test",

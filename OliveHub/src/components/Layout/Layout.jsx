@@ -6,7 +6,7 @@ import styles from "./Layout.module.css";
 export function Layout() {
   return (
     <div className={styles.layout}>
-      <TopBar />
+      <TopBar id={styles.topBar} />
       <div className={styles.content}>
         <Outlet />
       </div>

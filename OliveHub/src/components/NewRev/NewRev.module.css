@@ -1,3 +1,7 @@
+.newRev {
+  height: 100vh;
+}
+
 .newRev h2 {
   color: white;
   display: flex;
