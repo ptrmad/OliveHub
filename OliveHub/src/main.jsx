@@ -6,6 +6,8 @@ import "./styles/theme.css";
 import { NavBar } from "./components/NavBar/NavBar.jsx";
 import { Home } from "./views/Home/Home.jsx";
 import { Layout } from "./components/Layout/Layout.jsx";
+import { ItemPage } from "./views/ItemPage/ItemPage.jsx";
+import { Ranking } from "./views/Ranking/Ranking.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +17,10 @@ const router = createBrowserRouter([
   {
     path: "",
     element: <Layout />,
-    children: [],
+    children: [
+      { path: "/item", element: <ItemPage /> },
+      { path: "/best", element: <Ranking /> },
+    ],
   },
   {
     path: "test",

@@ -34,23 +34,3 @@ export function HomeRanking() {
     </div>
   );
 }
-{
-  /* <div className={styles.podium}>
-        <img className={styles.award} src={FIRST} />
-
-        <HomeRankingItem />
-      </div>
-      <div className={styles.podium}>
-        <img className={styles.award} src={SECOND} />
-
-        <HomeRankingItem />
-      </div>
-      <div className={styles.podium}>
-        <div className={styles.podiumImageWrapper}></div>
-        <img className={styles.award} src={THIRD} />
-
-        <HomeRankingItem />
-      </div>
-      <HomeRankingItem />
-      <HomeRankingItem /> */
-}

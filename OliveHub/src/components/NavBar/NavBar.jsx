@@ -10,7 +10,7 @@ export function NavBar() {
       <NavLink to="home" className={styles.navLink}>
         <img src={HOME} alt="" /> <p>Home</p>
       </NavLink>
-      <NavLink to="ranking" className={styles.navLink}>
+      <NavLink to="../best" className={styles.navLink}>
         <img src={TOP} alt="" /> <p>Ranking</p>
       </NavLink>
       <NavLink to="explore" className={styles.navLink}>
