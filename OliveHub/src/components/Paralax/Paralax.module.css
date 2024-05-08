@@ -12,10 +12,10 @@
   perspective: 200px;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: proximity;
 }
 
 .paralax::-webkit-scrollbar {

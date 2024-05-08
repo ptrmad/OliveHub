@@ -12,7 +12,6 @@ export function Paralax() {
     <div className={styles.pageContainer}>
       <div className={styles.paralax}>
         <TopBar className={styles.topbar} />
-
         <img className={styles.landscape3} src={LANDSCAPE3} alt="" />
         <img className={styles.landscape2} src={LANDSCAPE2} alt="" />
         <img className={styles.landscape1} src={LANDSCAPE1} alt="" />
