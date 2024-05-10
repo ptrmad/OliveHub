@@ -13,11 +13,11 @@ export function TopBar() {
         <Logo />
       </div>
       <div className={styles.userIcons}>
-        <NavLink to="my-profile">
+        <NavLink to="../favourites">
           <img src={FAVOURITES} alt="" />
           <p>Favourites</p>
         </NavLink>
-        <NavLink to="favourites">
+        <NavLink to="/user-profile">
           <img src={PROFILE} alt="" />
           <p>My Profile</p>
         </NavLink>

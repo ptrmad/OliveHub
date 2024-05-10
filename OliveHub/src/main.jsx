@@ -3,11 +3,12 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./styles/globals.css";
 import "./styles/theme.css";
-import { NavBar } from "./components/NavBar/NavBar.jsx";
 import { Home } from "./views/Home/Home.jsx";
 import { Layout } from "./components/Layout/Layout.jsx";
 import { ItemPage } from "./views/ItemPage/ItemPage.jsx";
 import { Ranking } from "./views/Ranking/Ranking.jsx";
+import { Favourites } from "./views/Favourites/Favourites.jsx";
+import { Explore } from "./views/Explore/Explore.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,11 +21,9 @@ const router = createBrowserRouter([
     children: [
       { path: "/:itemId", element: <ItemPage /> },
       { path: "/best", element: <Ranking /> },
+      { path: "/favourites", element: <Favourites /> },
+      { path: "/explore", element: <Explore /> },
     ],
-  },
-  {
-    path: "test",
-    element: <NavBar />,
   },
 ]);
 
