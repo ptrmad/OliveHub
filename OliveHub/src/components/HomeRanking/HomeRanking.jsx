@@ -4,6 +4,7 @@ import FIRST from "../../assets/1stplace.svg";
 import SECOND from "../../assets/2ndplace.svg";
 import THIRD from "../../assets/3rdplace.svg";
 import { data } from "../../data/data";
+import { Link } from "react-router-dom";
 
 export function HomeRanking() {
   const sortedData = data.sort((a, b) => b.rating - a.rating).slice(0, 5);
@@ -21,13 +22,15 @@ export function HomeRanking() {
                 src={[FIRST, SECOND, THIRD][index]}
               />
             )}
-            <HomeRankingItem
-              key={item.id}
-              imgSource={item.image}
-              oliveName={item.name}
-              oliveBrand={item.brand}
-              oliveRating={item.rating}
-            />
+            <Link to={`/${item.itemId}`}>
+              <HomeRankingItem
+                key={item.itemId}
+                imgSource={item.image}
+                oliveName={item.name}
+                oliveBrand={item.brand}
+                oliveRating={item.rating}
+              />
+            </Link>
           </div>
         ))}
       </div>
