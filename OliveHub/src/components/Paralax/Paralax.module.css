@@ -39,6 +39,7 @@
   width: 100%;
   align-items: center;
   justify-content: center;
+  transform: translateY(-2rem);
 }
 
 .landscape2 {
