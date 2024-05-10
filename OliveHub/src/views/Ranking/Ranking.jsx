@@ -17,7 +17,7 @@ export function Ranking() {
         <div key={item.id} className={styles.podium}>
           <p className={styles.place}>{index + 1}</p>
 
-          <Link to="/">
+          <Link to={`/${item.itemId}`}>
             {index < 3 && (
               <img
                 className={styles.award}
