@@ -7,7 +7,7 @@ import EXPLORE from "../../assets/explore.svg";
 export function NavBar() {
   return (
     <div className={styles.NavBar}>
-      <NavLink to="home" className={styles.navLink}>
+      <NavLink to="/home" className={styles.navLink}>
         <img src={HOME} alt="" /> <p>Home</p>
       </NavLink>
       <NavLink to="../best" className={styles.navLink}>

@@ -33,8 +33,16 @@
   z-index: -4;
 }
 
+.searchContainer {
+  z-index: -2;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
 .landscape2 {
-  transform: translateZ(-50px) scale(1.5) translateY(-6rem);
+  transform: translateZ(-50px) scale(1.5) translateY(-4rem);
   z-index: -3;
 }
 

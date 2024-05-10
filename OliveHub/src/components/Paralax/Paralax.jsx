@@ -6,6 +6,7 @@ import { HomeRanking } from "../HomeRanking/HomeRanking";
 import { NewRev } from "../NewRev/NewRev";
 import { Footer } from "../Footer/Footer";
 import { TopBar } from "../TopBar/TopBar";
+import { SearchBar } from "../SearchBar/SearchBar";
 
 export function Paralax() {
   return (
@@ -13,7 +14,11 @@ export function Paralax() {
       <div className={styles.paralax}>
         <TopBar className={styles.topbar} />
         <img className={styles.landscape3} src={LANDSCAPE3} alt="" />
+        <div className={styles.searchContainer}>
+          <SearchBar />
+        </div>
         <img className={styles.landscape2} src={LANDSCAPE2} alt="" />
+
         <img className={styles.landscape1} src={LANDSCAPE1} alt="" />
         <div className={styles.olives}>
           <div className={styles.gradient}>
