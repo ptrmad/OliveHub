@@ -2,7 +2,7 @@ export const data = [
   {
     name: "Golden Grove",
     brand: "Sunrise Farms",
-    id: "OLV001",
+    itemId: "OLV001",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 9.5,
@@ -13,7 +13,7 @@ export const data = [
   {
     name: "Mediterra Blend",
     brand: "Ancient Harvest",
-    id: "OLV002",
+    itemId: "OLV002",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 8,
@@ -24,7 +24,7 @@ export const data = [
   {
     name: "Amber Essence",
     brand: "Nature's Bounty",
-    id: "OLV003",
+    itemId: "OLV003",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 8.5,
@@ -35,7 +35,7 @@ export const data = [
   {
     name: "Azure Mist",
     brand: "Majestic Foods",
-    id: "OLV004",
+    itemId: "OLV004",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 7.5,
@@ -46,7 +46,7 @@ export const data = [
   {
     name: "Sunburst Reserve",
     brand: "Harvest Moon",
-    id: "OLV005",
+    itemId: "OLV005",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 9,
@@ -57,18 +57,18 @@ export const data = [
   {
     name: "Tuscan Elegance",
     brand: "Villa Italia",
-    id: "OLV006",
+    itemId: "OLV006",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 8.5,
     reviewDate: "2024-04-06",
     review:
-      "Tuscan Elegance olive oil is a classic blend with a deep green color and a robust, peppery flavor. It offers a balanced taste profile with hints of tomato leaf and a lingering bitterness. The aroma is bold and earthy, evoking images of the Tuscan countryside.",
+      "Tuscan Elegance olive oil is a classic blend with a deep green color and a robust, peppery flavor. It offers a balanced taste profile with hints of tomato leaf and a lingering bitterness. The aroma is bold and earthy, evoking images of the Tuscan countrysitemIde.",
   },
   {
     name: "Whispering Meadows",
     brand: "Green Valley",
-    id: "OLV007",
+    itemId: "OLV007",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 7,
@@ -79,7 +79,7 @@ export const data = [
   {
     name: "Sicilian Sunshine",
     brand: "Sunny Isles",
-    id: "OLV008",
+    itemId: "OLV008",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 8.5,
@@ -90,7 +90,7 @@ export const data = [
   {
     name: "Verde Valley",
     brand: "Mountain Harvest",
-    id: "OLV009",
+    itemId: "OLV009",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 9,
@@ -101,7 +101,7 @@ export const data = [
   {
     name: "Gentle Breeze",
     brand: "Harmony Farms",
-    id: "OLV010",
+    itemId: "OLV010",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 7.5,
@@ -112,7 +112,7 @@ export const data = [
   {
     name: "Harvest Hues",
     brand: "Sunrise Farms",
-    id: "OLV011",
+    itemId: "OLV011",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 8,
@@ -123,7 +123,7 @@ export const data = [
   {
     name: "Garden Essence",
     brand: "Bountiful Harvest",
-    id: "OLV012",
+    itemId: "OLV012",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 8.5,
@@ -134,7 +134,7 @@ export const data = [
   {
     name: "Silent Grove",
     brand: "Tranquil Meadows",
-    id: "OLV013",
+    itemId: "OLV013",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 9,
@@ -143,31 +143,31 @@ export const data = [
       "Silent Grove olive oil is a premium blend with a deep green color and a complex, fruity flavor profile. It boasts notes of ripe olives, almonds, and a peppery finish. The aroma is rich and inviting, reminiscent of a secluded grove on a tranquil day.",
   },
   {
-    name: "Vivid Harvest",
+    name: "VivitemId Harvest",
     brand: "Sunset Farms",
-    id: "OLV014",
+    itemId: "OLV014",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 8,
     reviewDate: "2024-04-07",
     review:
-      "Vivid Harvest olive oil is a vibrant blend with a golden color and a rich, fruity flavor. It offers hints of ripe tomatoes and a peppery finish. The aroma is reminiscent of a bountiful harvest on a warm summer evening.",
+      "VivitemId Harvest olive oil is a vibrant blend with a golden color and a rich, fruity flavor. It offers hints of ripe tomatoes and a peppery finish. The aroma is reminiscent of a bountiful harvest on a warm summer evening.",
   },
   {
     name: "Rustic Reserve",
     brand: "Country Comfort",
-    id: "OLV015",
+    itemId: "OLV015",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 8.5,
     reviewDate: "2024-02-26",
     review:
-      "Rustic Reserve olive oil is a robust blend with a deep amber color and a bold, peppery flavor. It boasts notes of green grass and a lingering bitterness. The aroma is earthy and rustic, evoking images of a countryside retreat.",
+      "Rustic Reserve olive oil is a robust blend with a deep amber color and a bold, peppery flavor. It boasts notes of green grass and a lingering bitterness. The aroma is earthy and rustic, evoking images of a countrysitemIde retreat.",
   },
   {
     name: "Wholesome Blend",
     brand: "Pure Nature",
-    id: "OLV016",
+    itemId: "OLV016",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 9,
@@ -178,7 +178,7 @@ export const data = [
   {
     name: "Crimson Reserve",
     brand: "Red River Farms",
-    id: "OLV017",
+    itemId: "OLV017",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 7.5,
@@ -189,7 +189,7 @@ export const data = [
   {
     name: "Enchanted Orchard",
     brand: "Mystic Meadows",
-    id: "OLV018",
+    itemId: "OLV018",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 9.5,
@@ -200,7 +200,7 @@ export const data = [
   {
     name: "Whispering Pines",
     brand: "Evergreen Farms",
-    id: "OLV019",
+    itemId: "OLV019",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 8,
@@ -211,7 +211,7 @@ export const data = [
   {
     name: "Harvest Moonlight",
     brand: "Twilight Farms",
-    id: "OLV020",
+    itemId: "OLV020",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 8.5,
@@ -222,7 +222,7 @@ export const data = [
   {
     name: "Glistening Grove",
     brand: "Shining Star Farms",
-    id: "OLV021",
+    itemId: "OLV021",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 9,
@@ -234,7 +234,7 @@ export const data = [
   {
     name: "Tranquil Haven",
     brand: "Peaceful Meadows",
-    id: "OLV022",
+    itemId: "OLV022",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 8.5,
@@ -246,7 +246,7 @@ export const data = [
   {
     name: "Divine Harvest",
     brand: "Heavenly Farms",
-    id: "OLV023",
+    itemId: "OLV023",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 9,
@@ -258,18 +258,18 @@ export const data = [
   {
     name: "Amber Glow",
     brand: "Radiant Farms",
-    id: "OLV024",
+    itemId: "OLV024",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 8.5,
     reviewDate: "2023-09-06",
     review:
-      "Amber Glow olive oil is a robust blend with a deep amber color and a bold, peppery flavor. It boasts notes of green grass and a lingering bitterness. The aroma is earthy and rustic, evoking images of a countryside retreat.",
+      "Amber Glow olive oil is a robust blend with a deep amber color and a bold, peppery flavor. It boasts notes of green grass and a lingering bitterness. The aroma is earthy and rustic, evoking images of a countrysitemIde retreat.",
   },
   {
     name: "Serene Valley",
     brand: "Tranquil Harvest",
-    id: "OLV025",
+    itemId: "OLV025",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 8,
@@ -281,7 +281,7 @@ export const data = [
   {
     name: "Sunlit Fields",
     brand: "Sunny Hills Farms",
-    id: "OLV026",
+    itemId: "OLV026",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 8.5,
@@ -293,7 +293,7 @@ export const data = [
   {
     name: "Silken Blend",
     brand: "Velvet Harvest",
-    id: "OLV027",
+    itemId: "OLV027",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 9.5,
@@ -305,7 +305,7 @@ export const data = [
   {
     name: "Misty Grove",
     brand: "Foggy Hills Farms",
-    id: "OLV028",
+    itemId: "OLV028",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 8,
@@ -316,7 +316,7 @@ export const data = [
   {
     name: "Radiant Orchard",
     brand: "Sunny Day Farms",
-    id: "OLV029",
+    itemId: "OLV029",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 9,
@@ -328,7 +328,7 @@ export const data = [
   {
     name: "Azure Heights",
     brand: "Blue Sky Farms",
-    id: "OLV030",
+    itemId: "OLV030",
     image:
       "https://cdnb.artstation.com/p/assets/images/images/035/417/899/large/abhinav-singh-olive-oil.jpg?1614893155",
     rating: 8.5,
