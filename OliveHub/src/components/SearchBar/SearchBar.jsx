@@ -4,17 +4,25 @@ import { SearchContext } from "../../contexts/SearchContext";
 import { useNavigate } from "react-router-dom";
 
 export function SearchBar() {
-  const { handleSearchChange } = useContext(SearchContext);
+  const { search, handleSearchChange } = useContext(SearchContext);
+  const navigate = useNavigate();
+
+  const handleUpdateSearch = (newSearchTerm) => {
+    handleSearchChange(newSearchTerm);
+
+    navigate(`/explore?search=${newSearchTerm}`);
+  };
 
   return (
     <div>
-      <form>
+      <form onSubmit={(e) => e.preventDefault()}>
         <input
-          onChange={(e) => handleSearchChange(e.target.value)}
-          onSubmit={()}
+          type="text"
           placeholder="Search"
+          value={search}
           className={styles.searchBar}
-        ></input>
+          onChange={(e) => handleUpdateSearch(e.target.value)}
+        />
       </form>
     </div>
   );
