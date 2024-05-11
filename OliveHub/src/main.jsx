@@ -9,6 +9,7 @@ import { ItemPage } from "./views/ItemPage/ItemPage.jsx";
 import { Ranking } from "./views/Ranking/Ranking.jsx";
 import { Favourites } from "./views/Favourites/Favourites.jsx";
 import { Explore } from "./views/Explore/Explore.jsx";
+import { SearchContextProvider } from "./contexts/SearchContext.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <SearchContextProvider>
+      <RouterProvider router={router} />
+    </SearchContextProvider>
   </React.StrictMode>
 );
