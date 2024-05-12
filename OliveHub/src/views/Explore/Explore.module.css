@@ -1,0 +1,24 @@
+.explore {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  align-items: center;
+  padding: 10vh 5vw;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-self: center;
+  width: 100%;
+}
+
+.list {
+  align-self: center;
+
+  width: 35%;
+  margin: 2rem;
+}
