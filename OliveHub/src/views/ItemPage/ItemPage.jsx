@@ -31,7 +31,7 @@ export function ItemPage() {
             <img className={styles.olivedrop} src={DROP} />
           </p>
           <div className={styles.addToFavourites}>
-            <button onClick={(item) => setFavourites(favourites.push(item))}>
+            <button onClick={() => setFavourites(itemData[0])}>
               <p>Add to favourites</p>
               <img src={STAR} />
             </button>

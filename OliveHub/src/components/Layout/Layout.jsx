@@ -6,7 +6,7 @@ import { FavouritesContext } from "../../contexts/FavouritesContext";
 import { useState } from "react";
 
 export function Layout() {
-  const [favourites, setFavourites] = useState(["test"]);
+  const [favourites, setFavourites] = useState([]);
 
   return (
     <div className={styles.layout}>
