@@ -1,5 +1,8 @@
 import { useParams } from "react-router-dom";
 import { data } from "../../data/data";
+import { FavouritesContext } from "../../contexts/FavouritesContext";
+import { use } from "react";
+
 import styles from "./ItemPage.module.css";
 
 import DROP from "../../assets/olivedrop.png";
@@ -7,6 +10,7 @@ import STAR from "../../assets/star.svg";
 
 export function ItemPage() {
   const { itemId } = useParams();
+  const { favourites, setFavourites } = use(FavouritesContext);
 
   const itemData = data.filter((olive) => itemId === olive.itemId);
 
@@ -27,8 +31,10 @@ export function ItemPage() {
             <img className={styles.olivedrop} src={DROP} />
           </p>
           <div className={styles.addToFavourites}>
-            <p>Add to favourites</p>
-            <img src={STAR} />
+            <button onClick={(item) => setFavourites(favourites.push(item))}>
+              <p>Add to favourites</p>
+              <img src={STAR} />
+            </button>
           </div>
         </div>
       </div>

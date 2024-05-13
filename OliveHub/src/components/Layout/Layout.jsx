@@ -2,19 +2,21 @@ import { Outlet } from "react-router-dom";
 import { TopBar } from "../TopBar/TopBar";
 import { Footer } from "../Footer/Footer";
 import styles from "./Layout.module.css";
-// import { SearchContext } from "../../contexts/SearchContext";
-// import { useState } from "react";
+import { FavouritesContext } from "../../contexts/FavouritesContext";
+import { useState } from "react";
 
 export function Layout() {
+  const [favourites, setFavourites] = useState(["test"]);
+
   return (
     <div className={styles.layout}>
-      {/* <SearchContext.Provider value={{ search, handleSearchChange }}> */}
-      <TopBar id={styles.topBar} />
-      <div className={styles.content}>
-        <Outlet />
-      </div>
-      <Footer />
-      {/* </SearchContext.Provider> */}
+      <FavouritesContext value={{ favourites, setFavourites }}>
+        <TopBar id={styles.topBar} />
+        <div className={styles.content}>
+          <Outlet />
+        </div>
+        <Footer />
+      </FavouritesContext>
     </div>
   );
 }
