@@ -1,10 +1,10 @@
-import { useContext } from "react";
+import { use } from "react";
 import styles from "./SearchBar.module.css";
 import { SearchContext } from "../../contexts/SearchContext";
 import { useNavigate } from "react-router-dom";
 
 export function SearchBar() {
-  const { setSearch } = useContext(SearchContext);
+  const { setSearch } = use(SearchContext);
   const navigate = useNavigate();
 
   return (
@@ -12,10 +12,7 @@ export function SearchBar() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          // const newSearchTerm = search;
-          //   console.log(newSearchTerm);
           navigate(`/explore`);
-          ///${newSearchTerm}
         }}
       >
         <input
@@ -23,7 +20,6 @@ export function SearchBar() {
           className={styles.searchBar}
           onChange={(e) => {
             setSearch(e.target.value);
-            // console.log(e.target.value);
           }}
         />
       </form>

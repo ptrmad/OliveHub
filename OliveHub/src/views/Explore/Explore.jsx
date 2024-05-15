@@ -2,13 +2,13 @@ import styles from "./Explore.module.css";
 
 import { SearchBar } from "../../components/SearchBar/SearchBar";
 import { SearchContext } from "../../contexts/SearchContext";
-import { useContext } from "react";
+import { use } from "react";
 import { data } from "../../data/data";
 import { Link } from "react-router-dom";
 import { ArticleCover } from "../../components/ArticleCover/ArticleCover";
 
 export function Explore() {
-  const { search } = useContext(SearchContext);
+  const { search } = use(SearchContext);
   const searchResults = data.filter((item) => {
     return (
       item.name.toLowerCase().includes(search.toLowerCase()) ||

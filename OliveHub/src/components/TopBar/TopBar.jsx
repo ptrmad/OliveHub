@@ -17,7 +17,7 @@ export function TopBar() {
           <img src={FAVOURITES} alt="" />
           <p>Favourites</p>
         </NavLink>
-        <NavLink to="/user-profile">
+        <NavLink to="../profile">
           <img src={PROFILE} alt="" />
           <p>My Profile</p>
         </NavLink>

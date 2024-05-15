@@ -1,15 +1,29 @@
+import { use } from "react";
+import { FavouritesContext } from "../../contexts/FavouritesContext";
+import USERIMAGE from "../../assets/profilepic.jpg";
+import styles from "./MyProfile.module.css";
+
 export function MyProfile() {
+  const { favourites } = use(FavouritesContext);
+
+  const userData = {
+    name: "user1",
+    id: 123456,
+    numberOfFavourites: favourites.length,
+    dateOfRegistration: "15.05.2024",
+  };
   return (
-    <div>
+    <div className={styles.myProfile}>
       <div>
-        <img />
+        <img src={USERIMAGE} />
       </div>
-      <div>
-        profile data
-        <div>user id</div>
-        <div>number of favourites</div>
-        <div>date of registration</div>
-        <div>delete account</div>
+      <div className={styles.profileData}>
+        <p>Profile data</p>
+        <div>Username: {userData.name}</div>
+        <div>UserID: {userData.id}</div>
+        <div>Number of favourites: {userData.numberOfFavourites}</div>
+        <div>Date of registration: {userData.dateOfRegistration}</div>
+        <div>Delete account</div>
       </div>
     </div>
   );

@@ -10,6 +10,8 @@ import { Ranking } from "./views/Ranking/Ranking.jsx";
 import { Favourites } from "./views/Favourites/Favourites.jsx";
 import { Explore } from "./views/Explore/Explore.jsx";
 import { SearchContextProvider } from "./contexts/SearchContext.jsx";
+import { MyProfile } from "./views/MyProfile/MyProfile.jsx";
+import { FavouritesContextProvider } from "./contexts/FavouritesContext.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,7 @@ const router = createBrowserRouter([
       { path: "/best", element: <Ranking /> },
       { path: "/favourites", element: <Favourites /> },
       { path: "/explore", element: <Explore /> },
+      { path: "/profile", element: <MyProfile /> },
     ],
   },
 ]);
@@ -31,7 +34,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <SearchContextProvider>
-      <RouterProvider router={router} />
+      <FavouritesContextProvider>
+        <RouterProvider router={router} />
+      </FavouritesContextProvider>
     </SearchContextProvider>
   </React.StrictMode>
 );
