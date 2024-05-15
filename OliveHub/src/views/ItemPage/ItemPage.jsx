@@ -12,6 +12,16 @@ export function ItemPage() {
   const { itemId } = useParams();
   const { favourites, setFavourites } = use(FavouritesContext);
 
+  function handleAddToFavourites(newFavItem) {
+    const isAlreadyFavorite = favourites.some(
+      (item) => item.itemId === newFavItem.itemId
+    );
+
+    isAlreadyFavorite
+      ? alert("Item is already in the favourites!")
+      : setFavourites((prevFavourites) => [...prevFavourites, newFavItem]);
+  }
+
   const itemData = data.filter((olive) => itemId === olive.itemId);
 
   return (
@@ -31,7 +41,7 @@ export function ItemPage() {
             <img className={styles.olivedrop} src={DROP} />
           </p>
           <div className={styles.addToFavourites}>
-            <button onClick={() => setFavourites(itemData[0])}>
+            <button onClick={() => handleAddToFavourites(itemData[0])}>
               <p>Add to favourites</p>
               <img src={STAR} />
             </button>
