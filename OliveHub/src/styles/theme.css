@@ -7,4 +7,5 @@ body {
   --color-blue: #6ccff6;
   --color-white: #fffffc;
   --color-black: #001011;
+  background-color: var(--color-black);
 }
