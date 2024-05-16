@@ -29,8 +29,11 @@ export function Favourites() {
                 oliveRating={item.rating}
               />
             </Link>
-            <button onClick={() => handleRemoveFromFavourites(item)}>
-              Remove from Favourites
+            <button
+              className={styles.removeButton}
+              onClick={() => handleRemoveFromFavourites(item)}
+            >
+              Remove
             </button>
           </div>
         ))}
