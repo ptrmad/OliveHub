@@ -6,7 +6,13 @@ import { use } from "react";
 import { ArticleCover } from "../../components/ArticleCover/ArticleCover";
 
 export function Favourites() {
-  const { favourites } = use(FavouritesContext);
+  const { favourites, setFavourites } = use(FavouritesContext);
+
+  function handleRemoveFromFavourites(item) {
+    setFavourites(
+      favourites.filter((favourite) => favourite.itemId !== item.itemId)
+    );
+  }
   return (
     <div>
       <div className={styles.listContainer}>
@@ -23,6 +29,9 @@ export function Favourites() {
                 oliveRating={item.rating}
               />
             </Link>
+            <button onClick={() => handleRemoveFromFavourites(item)}>
+              Remove from Favourites
+            </button>
           </div>
         ))}
       </div>
