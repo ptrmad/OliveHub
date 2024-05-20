@@ -12,21 +12,25 @@ import { Explore } from "./views/Explore/Explore.jsx";
 import { SearchContextProvider } from "./contexts/SearchContext.jsx";
 import { MyProfile } from "./views/MyProfile/MyProfile.jsx";
 import { FavouritesContextProvider } from "./contexts/FavouritesContext.jsx";
+import { Error } from "./views/Error/Error.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/home",
     element: <Home />,
+    errorElement: <Error />,
   },
   {
     path: "",
     element: <Layout />,
+    errorElement: <Error />,
     children: [
       { path: "/:itemId", element: <ItemPage /> },
       { path: "/best", element: <Ranking /> },
       { path: "/favourites", element: <Favourites /> },
       { path: "/explore", element: <Explore /> },
       { path: "/profile", element: <MyProfile /> },
+      { path: "*", element: <Error /> },
     ],
   },
 ]);
