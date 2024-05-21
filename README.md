@@ -115,3 +115,23 @@ OliveHub provides a ranking of the best olive oils based on user ratings. You ca
 ```jsx
 <Ranking />
 ```
+
+## Future
+
+I have exciting plans to enhance OliveHub with new features and improvements. Here are some of the key updates I aim to implement:
+
+### Responsive Web Design
+
+In the near future, I plan to make OliveHub fully responsive, ensuring a seamless and enjoyable browsing experience on desktops, tablets, and mobile devices. This includes:
+
+- **Adaptive Layouts:** Redesigning our layout to adapt to different screen sizes.
+- **Mobile-Friendly Navigation:** Enhancing navigation for easy use on smaller screens.
+- **Optimized Images and Content:** Ensuring images and content are properly scaled and optimized for various devices.
+
+### Form for Adding New Items
+
+To expand database of olive oils, I plan to introduce a feature that allows users to submit new items. This feature will include:
+
+- **User-Friendly Submission Form:** A simple and intuitive form for users to add new olive oils to our database.
+- **Validation and Moderation:** Implementing validation rules to ensure the quality and accuracy of submissions, along with a moderation system to review and approve new entries.
+- **Community Contributions:** Enabling users to contribute descriptions, images, and reviews of new olive oils.
