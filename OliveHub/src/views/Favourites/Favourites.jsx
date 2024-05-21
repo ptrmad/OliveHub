@@ -14,7 +14,8 @@ export function Favourites() {
     );
   }
   return (
-    <div>
+    <div className={styles.favourites}>
+      <h2>Favourites</h2>
       <div className={styles.listContainer}>
         {favourites.map((item) => (
           <div key={item.id} className={styles.list}>
