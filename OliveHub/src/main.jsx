@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import "./styles/globals.css";
 import "./styles/theme.css";
 import { Home } from "./views/Home/Home.jsx";
@@ -25,6 +29,7 @@ const router = createBrowserRouter([
     element: <Layout />,
     errorElement: <Error />,
     children: [
+      { path: "/", element: <Navigate to="/home" /> },
       { path: "/:itemId", element: <ItemPage /> },
       { path: "/best", element: <Ranking /> },
       { path: "/favourites", element: <Favourites /> },
