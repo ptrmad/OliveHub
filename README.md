@@ -90,7 +90,7 @@ OliveHub is designed to help users find and read reviews of the best olive oils.
 
 ### Example 1: Searching for Olive Oils
 
-Use the search bar at the top of the homepage to find specific olive oils. Simply type in the name of the olive oil you are looking for, and OliveHub will display matching results. You can also go to /explore - there you'll find reused
+Use the search bar at the top of the homepage to find specific olive oils. Simply type in the name or the brand of the olive oil you are looking for, and OliveHub will display matching results. You can also go to /explore - there you'll find reused
 
 ```jsx
 <SearchBar />
