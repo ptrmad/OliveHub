@@ -58,7 +58,10 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
-3.
+3. Install react
+   ```sh
+   npm install react@beta react-dom@beta
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,6 +78,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Feature 1
 - [ ] Feature 2
 - [ ] Feature 3
-  - [ ] Nested Feature
+- [ ] Nested Feature
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+````
