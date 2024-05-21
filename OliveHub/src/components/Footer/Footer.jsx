@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Footer.module.css";
 
 export function Footer() {
@@ -5,7 +6,9 @@ export function Footer() {
     <div className={styles.footer}>
       <div className={styles.footerSection}>
         <li>ptr.m.d 2024</li>
-        <li>Github</li>
+        <li>
+          <Link to="https://github.com/ptrmad">Github</Link>
+        </li>
         <li>piotr.m.drozdzal@gmail.com</li>
       </div>
       <div className={styles.footerSection}>
