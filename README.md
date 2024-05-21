@@ -96,7 +96,9 @@ Use the search bar at the top of the homepage to find specific olive oils. Simpl
 <SearchBar />
 ```
 
-component and all the olive oils in database. Searchbar is working based on the react context mechanism
+component and all the olive oils in database. Searchbar is working based on the react context mechanism.
+
+  <img src="./images/explore.png" alt="OliveHub explore" width="800px" height="auto" />
 
 ### Example 2: Adding Olive Oils to Favourites
 
