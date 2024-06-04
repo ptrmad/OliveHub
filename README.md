@@ -56,12 +56,8 @@ You'll need Node.js and npm (Node Package Manager) installed on your system. You
    git clone [https://github.com/ptrmad/OliveHub.git](https://github.com/ptrmad/OliveHub.git)
    ```
 
-2. Install NPM packages
-   ````sh
-   npm install
-   ```
    ````
-3. Install react
+2. Install react
    ```sh
    npm install react@beta react-dom@beta
    ```
