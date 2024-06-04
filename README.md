@@ -8,7 +8,7 @@
 <h3 align="center">OliveHub - Discover, Learn, and Enjoy the World of Olive Oil</h3>
 
 <p align="center">
-  A React-based webpage designed to be a one-stop shop for olive oil enthusiasts.
+  A React-based webpage designed to for olive oil enthusiasts.
 </p>
 
 ## About The Project
