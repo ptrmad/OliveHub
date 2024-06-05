@@ -25,9 +25,9 @@ export function Paralax() {
             <NewRev />
           </div>
           <HomeRanking />
-          <Footer />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
