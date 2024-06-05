@@ -29,3 +29,28 @@
   display: flex;
   flex-direction: row;
 }
+
+@media only screen and (max-width: 768px) {
+  .NavBar {
+    display: flex;
+    gap: 0rem;
+    font-weight: 600;
+    text-align: center;
+    align-self: center;
+    padding-left: 5%;
+  }
+
+  .NavBar img {
+    max-width: 2rem;
+    padding-right: 0.5rem;
+  }
+
+  .NavBar a {
+    transition: 0.2s ease-out;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  ...;
+}

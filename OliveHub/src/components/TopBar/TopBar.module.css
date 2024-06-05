@@ -37,3 +37,40 @@
   align-self: center;
   justify-self: center;
 }
+
+@media only screen and (min-width: 768px) {
+  .topBar {
+    background-color: var(--color-olive);
+    color: var(--color-black);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height: 6rem;
+    padding: 1rem 0;
+    z-index: 999;
+  }
+
+  .userIcons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    text-align: center;
+    justify-self: right;
+    align-self: center;
+    padding-right: 5%;
+  }
+
+  .userIcons img {
+    max-width: 2rem;
+    transition: ease-in 0.2s;
+  }
+
+  .userIcons img:hover {
+    transform: scale(1.2);
+  }
+
+  .userIcons p {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+}
