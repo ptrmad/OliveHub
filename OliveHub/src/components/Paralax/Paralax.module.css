@@ -69,3 +69,12 @@
     var(--color-black) 99%
   );
 }
+
+@media only screen and (max-width: 1400px) {
+  .searchContainer {
+    z-index: 999;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+}
