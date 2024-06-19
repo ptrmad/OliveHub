@@ -13,11 +13,7 @@
 
 ## About The Project
 
-OliveHub is a comprehensive webpage designed for anyone who loves olive oil! Whether you're a seasoned connoisseur or just starting to explore the world of extra virgin olive oil (EVOO), OliveHub offers a wealth of information, resources, and tools to help you:
-
-- **Discover:** Explore different types of olive oil, their origins, and flavor profiles.
-- **Learn:** Gain insights into the production process, health benefits, and proper storage techniques.
-- **Enjoy:** Find recipes, pairing recommendations, and tips for incorporating olive oil into your everyday cooking.
+OliveHub is a comprehensive webpage designed for anyone who loves olive oil!
 
 <div align="center">
   <img src="./images/screenshot.png" alt="OliveHub Screenshot" width="800px" height="auto" />
@@ -129,5 +125,4 @@ In the near future, I plan to make OliveHub fully responsive, ensuring a seamles
 To expand database of olive oils, I plan to introduce a feature that allows users to submit new items. This feature will include:
 
 - **User-Friendly Submission Form:** A simple and intuitive form for users to add new olive oils to our database.
-- **Validation and Moderation:** Implementing validation rules to ensure the quality and accuracy of submissions, along with a moderation system to review and approve new entries.
-- **Community Contributions:** Enabling users to contribute descriptions, images, and reviews of new olive oils.
+
